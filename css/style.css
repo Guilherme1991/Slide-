@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#img{
+    animation-duration: 3s;
+    animation-name: efect;
+}
+@keyframes efect{
+    from{
+    margin-left: 100%;
+    }
+    to{
+        margin-left: 0%;
+    }
+}

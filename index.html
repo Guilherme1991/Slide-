@@ -1,0 +1,27 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width===, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Slide javaScript</title>
+</head>
+<body onload="change()">
+    <img src="" alt="" id="image">
+
+    <script>
+     let i = 0, trocando = document.getElementById('image');
+
+     /*Criando um array para troca das imagens*/
+     function troca(){
+      trocando.src = 'img/image' + (i++ % 3) + '.jpg';
+     }
+
+     /*Função que cria um intervalo de 
+     4 segundos de uma imagem para outra na tag body!!*/
+     function change(){
+     setInterval(troca, 4000);
+     }
+    </script>
+</body>
+</html>
